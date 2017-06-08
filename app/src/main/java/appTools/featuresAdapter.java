@@ -75,7 +75,7 @@ public class featuresAdapter extends RecyclerView.Adapter<featuresAdapter.ViewHo
                 if(featuresBean.getName().equals("Camera")){
 
                     String imageName="img2rec"+ getTime(1);
-                    File outputImage=new File(mActivity.getExternalFilesDir(Environment.DIRECTORY_PICTURES)+"/ImageRecognition",
+                    File outputImage=new File(mActivity.getFilesDir()+"/ImageRecognition",
                             imageName+".jpg");
                     try {
                         if(!outputImage.createNewFile()){
