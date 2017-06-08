@@ -1,0 +1,44 @@
+06-09 00:26:01.818 25612-25612/? D/Zygote: CtrlSocket libc.so ctrl_sockets_set_addr pfunc is not exist!
+06-09 00:26:01.828 25612-25612/? I/art: Late-enabling -Xcheck:jni
+06-09 00:26:01.858 25612-25612/? D/ActivityThread: ActivityThread,attachApplication
+06-09 00:26:02.698 25612-25612/com.example.irijwj.imagercognition I/InstantRun: starting instant run server: is main process
+06-09 00:26:02.878 25612-25612/com.example.irijwj.imagercognition W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+06-09 00:26:02.958 25612-25621/com.example.irijwj.imagercognition W/art: Suspending all threads took: 8.998ms
+06-09 00:26:02.988 25612-25612/com.example.irijwj.imagercognition D/CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.2, mControlPoint1y = 0.65, mControlPoint2x = 0.28, mControlPoint2y = 0.97
+06-09 00:26:02.988 25612-25612/com.example.irijwj.imagercognition D/CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.2, mControlPoint1y = 0.65, mControlPoint2x = 0.28, mControlPoint2y = 0.97
+06-09 00:26:02.988 25612-25612/com.example.irijwj.imagercognition D/CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.2, mControlPoint1y = 0.65, mControlPoint2x = 0.28, mControlPoint2y = 0.97
+06-09 00:26:02.988 25612-25612/com.example.irijwj.imagercognition D/CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.2, mControlPoint1y = 0.65, mControlPoint2x = 0.28, mControlPoint2y = 0.97
+06-09 00:26:03.068 25612-25612/com.example.irijwj.imagercognition W/ZipFileCache: init failed when open zip file. mPath=/data/skin,mZip=com.example.irijwj.imagercognition,mFileNotExist=true
+06-09 00:26:03.188 25612-25612/com.example.irijwj.imagercognition D/CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.2, mControlPoint1y = 0.65, mControlPoint2x = 0.28, mControlPoint2y = 0.97
+06-09 00:26:03.188 25612-25612/com.example.irijwj.imagercognition D/CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.2, mControlPoint1y = 0.65, mControlPoint2x = 0.28, mControlPoint2y = 0.97
+06-09 00:26:03.188 25612-25612/com.example.irijwj.imagercognition D/CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.2, mControlPoint1y = 0.65, mControlPoint2x = 0.28, mControlPoint2y = 0.97
+06-09 00:26:03.188 25612-25612/com.example.irijwj.imagercognition D/CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.2, mControlPoint1y = 0.65, mControlPoint2x = 0.28, mControlPoint2y = 0.97
+06-09 00:26:03.268 25612-25612/com.example.irijwj.imagercognition W/ContextImpl: Failed to ensure directory: /storage/sdcard1/Android/data/com.example.irijwj.imagercognition/files/Pictures
+06-09 00:26:03.338 25612-25612/com.example.irijwj.imagercognition I/ViewRootImpl: CPU Rendering VSync enable = false
+06-09 00:26:03.338 25612-25664/com.example.irijwj.imagercognition D/OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+06-09 00:26:03.338 25612-25612/com.example.irijwj.imagercognition E/HAL: hw_get_module_by_class: lib loaded: /system/lib/hw/gralloc.msm8909.so
+06-09 00:26:03.358 25612-25612/com.example.irijwj.imagercognition D/Atlas: Validating map...
+06-09 00:26:03.358 25612-25612/com.example.irijwj.imagercognition I/View: ssignParent(ViewParent parent) parent is: android.view.ViewRootImpl@1072e063
+06-09 00:26:03.358 25612-25612/com.example.irijwj.imagercognition I/ViewRootImpl: CPU Rendering VSync enable = false
+06-09 00:26:03.368 25612-25612/com.example.irijwj.imagercognition I/View: ssignParent(ViewParent parent) parent is: android.view.ViewRootImpl@30d9e460
+06-09 00:26:03.418 25612-25664/com.example.irijwj.imagercognition I/Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build: Nondeterministic_AU_msm8909_LA.BR.1.2.3.C3__release_AU (I7b941c52a8)
+                                                                                OpenGL ES Shader Compiler Version: E031.25.03.04
+                                                                                Build Date: 05/05/15 Tue
+                                                                                Local Branch: mybranch9724680
+                                                                                Remote Branch: quic/LA.BR.1.2.3.c3
+                                                                                Local Patches: NONE
+                                                                                Reconstruct Branch: NOTHING
+06-09 00:26:03.418 25612-25664/com.example.irijwj.imagercognition I/OpenGLRenderer: Initialized EGL, version 1.4
+06-09 00:26:03.428 25612-25664/com.example.irijwj.imagercognition D/OpenGLRenderer: Enabling debug mode 0
+06-09 00:26:03.428 25612-25664/com.example.irijwj.imagercognition E/HAL: hw_get_module_by_class: lib loaded: /system/lib/hw/gralloc.msm8909.so
+06-09 00:26:03.428 25612-25664/com.example.irijwj.imagercognition E/HAL: hw_get_module_by_class: lib loaded: /system/lib/hw/gralloc.msm8909.so
+06-09 00:26:03.518 25612-25664/com.example.irijwj.imagercognition E/HAL: hw_get_module_by_class: lib loaded: /system/lib/hw/gralloc.msm8909.so
+06-09 00:26:03.588 25612-25612/com.example.irijwj.imagercognition W/art: Before Android 4.1, method int android.support.v7.widget.ListViewCompat.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+06-09 00:26:03.728 25612-25612/com.example.irijwj.imagercognition I/Timeline: Timeline: Activity_idle id: android.os.BinderProxy@55345df time:55905946
+06-09 00:26:05.268 25612-25612/com.example.irijwj.imagercognition I/View: ssignParent(ViewParent parent) parent is: null
+06-09 00:26:05.268 25612-25612/com.example.irijwj.imagercognition I/ViewRootImpl: CPU Rendering VSync enable = false
+06-09 00:26:05.268 25612-25612/com.example.irijwj.imagercognition I/View: ssignParent(ViewParent parent) parent is: android.view.ViewRootImpl@257547b7
+06-09 00:26:05.268 25612-25612/com.example.irijwj.imagercognition I/View: ssignParent(ViewParent parent) parent is: null
+06-09 00:26:05.298 25612-25664/com.example.irijwj.imagercognition E/HAL: hw_get_module_by_class: lib loaded: /system/lib/hw/gralloc.msm8909.so
+06-09 00:26:07.278 25612-25612/com.example.irijwj.imagercognition I/View: ssignParent(ViewParent parent) parent is: null
+06-09 00:26:07.278 25612-25612/com.example.irijwj.imagercognition I/View: ssignParent(ViewParent parent) parent is: null
