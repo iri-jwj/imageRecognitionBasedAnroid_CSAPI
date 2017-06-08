@@ -115,7 +115,14 @@ public class MainActivity extends AppCompatActivity {
         switch (requestCode){
             case TAKE_PHOTO:
                 if(resultCode==RESULT_OK){
-                    File file=new File(getExternalCacheDir()+"/01.jpg");// 将要保存图片的路径
+                    File file=new File(this.getFilesDir()+"/01.jpg");// 将要保存图片的路径
+                    try{
+                        if(!file.createNewFile()){
+                            Toast.makeText(this,"createFile失败",Toast.LENGTH_SHORT).show();
+                        }
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
                     file=bitmapToFile(file);
                     String finalImagePath=getRealFilePath(this,imageUri);
                     if(finalImagePath==null){
@@ -123,10 +130,13 @@ public class MainActivity extends AppCompatActivity {
                         return;
                     }
                     //File imageFile=new File(finalImagePath);
-                    runOKhttp.picture=file;
+                    if(!file.exists()){
+                        Toast.makeText(this,"take_photo file 不存在",Toast.LENGTH_SHORT).show();
+                    }
+                    runOKhttp a=new runOKhttp(file);
 
                     try{
-                        String result=runOKhttp.runApi(this);
+                        String result=a.runApi(this);
                         Toast.makeText(this,result,Toast.LENGTH_SHORT).show();
                         insert2DB(file.getName(),finalImagePath,result,getTime(2));
                     }catch (Exception e){
@@ -136,14 +146,26 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case CHOOSE_PHOTO:
                 if(resultCode==RESULT_OK){
-                    File file=new File(getExternalCacheDir()+"/01.jpg");
+                    File file=new File(getFilesDir()+"/01.jpg");
+                    try{
+                        if(!file.createNewFile()){
+                            Toast.makeText(this,"createFile失败",Toast.LENGTH_SHORT).show();
+                        }
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
+
                     if(Build.VERSION.SDK_INT>=19){
                         String finalImagePath=handleImageOnKitKat(data);
                         file=bitmapToFile(file,finalImagePath);
-                        runOKhttp.picture=file;
+                        if(!file.exists()){
+                            Toast.makeText(this,"bitmaptofile失败",Toast.LENGTH_SHORT).show();
+                        }
+
+                        runOKhttp a=new runOKhttp(file);
 
                         try{
-                            String result=runOKhttp.runApi(this);
+                            String result=a.runApi(this);
                             Toast.makeText(this,result,Toast.LENGTH_SHORT).show();
                             insert2DB(file.getName(),finalImagePath,result,getTime(2));
                         }catch (Exception e){
@@ -152,10 +174,10 @@ public class MainActivity extends AppCompatActivity {
                     }else{
                         String finalImagePath=handleImageBeforeKitKat(data);
                         file=bitmapToFile(file,finalImagePath);
-                        runOKhttp.picture=file;
+                        runOKhttp a=new runOKhttp(file);
 
                         try{
-                            String result=runOKhttp.runApi(this);
+                            String result=a.runApi(this);
                             Toast.makeText(this,result,Toast.LENGTH_SHORT).show();
                             insert2DB(file.getName(),finalImagePath,result,getTime(2));
                         }catch (Exception e){
@@ -167,7 +189,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
-
     //获取 读取SD卡权限
     @Override
     public void onRequestPermissionsResult(int requestCode,String[] permissions,int[] grantResults){
